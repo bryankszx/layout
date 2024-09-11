@@ -1,9 +1,11 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a {
+
+a{
     text-decoration: none;
     color: inherit;
 }
@@ -11,20 +13,83 @@ a {
 ul, ol, li{
     list-style: none;
 }
+
+
 body{
     height: 100vh;
-    display: flex;
+    display: flex; 
     flex-direction: column;
+    padding-inline: 80px;
+    background-color: rgb(255, 255, 255);
 }
+
 header{
     height: 200px;
-    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.logo{
+    height: 96px;
+    width: 96px;
+    background-image: url(./img/pngwing.com\ \(4\).png);
+    background-size: 100px;
+}
+
+.menu ul{
+    display: flex;
+    gap: 32px;
+    font-size: 32px;
+}
+
 main{
     flex-grow: 1;
-    background-color: pink;
+    display: flex;
 }
+.conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.conteudo h1{
+    font-size: 96px;
+}
+.conteudo p{
+    width: 80%;
+    font-size: 40px;
+}
+.acao button{
+    height: 80px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+}
+.social{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.social div{
+    height: 96px;
+    width: 96px;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
+.destaque{
+    width: 50%;
+    background-image: url(./img/download.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-color: white;
+    
+}
+
 footer{
     height: 100px;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
